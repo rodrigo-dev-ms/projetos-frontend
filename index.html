@@ -4,62 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebPage Pessoal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oldenburg&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link href="estilo.css" rel="stylesheet" />
   </head>
   <body>
     <header>
       <a>
-        <img src="logo_rodrigo.jpg" alt="logotipo" />
+        <img class="logo" src="logo_dev.jpg" alt="logotipo" />
       </a>
       <nav>
-        <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#portifolio">Portifólio</a></li>
-          <li><a href="#contato">Contato</a></li>
+        <ul class="lista">
+          <li><a class="a" href="#inicio">Início</a></li>
+          <li><a class="a" href="#sobre">Sobre</a></li>
+          <li><a class="a" href="#servicos">Serviços</a></li>
+          <li><a class="a" href="#portifolio">Portifólio</a></li>
+          <li><a class="a" href="#contato">Contato</a></li>
         </ul>
       </nav>
     </header>
 
     <section id="inicio">
-      <div>
-        <div>
-          <img src="perfil1.jpeg" alt="Foto principal" />
-        </div>
+      <div class="div_textos">
         <h2>Olá! Como vai?</h2>
-        <h1>Sou o Rodrigo Souza</h1>
-        <h3>Python back-end Developer and Software Architect</h3>
+        <h1>Me chamo <span class="h1_roxo">Rodrigo Souza</span></h1>
+        <h2>
+          <span class="h1_roxo"
+            >Python Back-end Developer and Software Architect</span
+          >
+        </h2>
         <p>
           Profissional com sólida experiência em infraestrutura de redes e
           operações de ISPs, atuando no planejamento, implantação e otimização
           de ambientes críticos. Atualmente, direciono minha atuação para o
-          desenvolvimento backend com Python e arquitetura de software,
+          desenvolvimento back-end com Python e Arquitetura de Software,
           integrando soluções escaláveis.
         </p>
 
-        <a href="#contato"> Vamos Conversar </a>
-
+        <br />
+        <a class="ancora" href="#contato"> Vamos Conversar </a>
         <div>
           <a>
-            <img src="icon_linkedin.png" alt="Linkedin" />
+            <img class="icones" src="1384014.png" alt="Linkedin" />
           </a>
           <a>
-            <img src="icon_whats.png" alt="whatsaapp" />
+            <img class="icones" src="icon_whats.png" alt="whatsaapp" />
           </a>
         </div>
+      </div>
+
+      <div class="div_imagem">
+        <img class="perfil" src="perfil1.jpeg" alt="Foto principal" />
       </div>
     </section>
 
     <section id="sobre">
-      <div>
-        <h2>Sobre mim</h2>
+      <div class="conteudo_sobre">
+        <h1>Sobre<span class="h1_roxo"> Mim</span></h1>
         <br />
-        <img src="perfil2.jpeg" alt="foto alternativa" />
-        <h3>
+        <img class="perfil2" src="perfil2.jpeg" alt="foto alternativa" />
+        <h2>
           Backend em Python e Arquitetura de Software com Forte Base em
           Infraestrutura e Web
-        </h3>
+        </h2>
         <p>
           Atuo na interseção entre redes e desenvolvimento, unindo anos de
           experiência prática em ambientes de telecomunicações com
@@ -68,16 +79,16 @@
           (Infrastructure as Code) e desenvolvimento de aplicações modernas e
           responsivas. Estou disponível para projetos que envolvam
           desenvolvimento backend, automação de ambientes, integração de
-          sistemas e construção de interfaces web eficientes, sempre com ênfase
-          em boas práticas, desempenho e manutenibilidade.
+          aplicações via APIs e construção de interfaces web eficientes, sempre
+          com ênfase em boas práticas, desempenho e manutenibilidade.
         </p>
 
-        <a href="#contato"> Contrate-me </a>
+        <a class="ancora" href="#contato"> Contrate-me </a>
       </div>
     </section>
     <!-- prettier-ignore-start -->
     <section id="habilidades">
-      <h2>Minhas habilidades</h2>
+      <h1>Minhas <span class="h1_roxo">Habilidades</span></h1>
 
       <div>
         <p>Python backend e bibliotecas</p>
@@ -85,9 +96,7 @@
         <div>[==================|      ]</div>
       </div>
       <div>
-        <p>
-          Gerenciamento e Implantação e Manutenção de Infraestrutura Crítica
-        </p>
+        <p>Gerenciamento, Implantação e Manutenção de Infraestrutura Crítica</p>
         <!-- prettier-ignore -->
         <div>[========================| ]</div>
       </div>
@@ -109,9 +118,9 @@
     </section>
 
     <footer>
-      <div>
-        <p>2026 Rodrigo Souza. Todos os direitos reservados.</p>
-        <a href="#inicio"> Voltar ao topo </a>
+      <div class="rodape">
+        <p><i>2026 Rodrigo Souza. Todos os direitos reservados.</i></p>
+        <a class="ancora" href="#inicio"> Voltar ao topo </a>
       </div>
     </footer>
   </body>
